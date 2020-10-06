@@ -55,7 +55,7 @@
                     "type" : "git",
                     "url" : "https://github.com/GustavoPeredo/font-downloader.git",
                     "branch" : "release",
-                    "commit" : "65d246d125990e8e98339c544b0b52ea160fdfc7"
+                    "commit" : "a3204698f0839acd3a28b5806637f189c408b248"
                 }
             ]
         }
