@@ -10,7 +10,7 @@
         "--device=dri",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--filesystem=~/.local/share/fonts",
+        "--filesystem=~/.local/share/fonts:create",
         "--filesystem=xdg-download",
         "--filesystem=xdg-documents"
     ],
@@ -55,7 +55,7 @@
                     "type" : "git",
                     "url" : "https://github.com/GustavoPeredo/font-downloader.git",
                     "branch" : "release",
-                    "commit" : "ec90dbf8d724fbc334387a1fac6d24ba9a200c5a"
+                    "commit" : "4d2f54b146318d2a6e02ee15b241e5f0a7e5088c"
                 }
             ]
         }
