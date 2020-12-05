@@ -10,9 +10,8 @@
         "--device=dri",
         "--socket=fallback-x11",
         "--socket=wayland",
-        "--filesystem=~/.local/share/fonts:create",
-        "--filesystem=xdg-download",
-        "--filesystem=xdg-documents"
+        "--filesystem=~/.local/share/fonts",
+        "--filesystem=xdg-download"
     ],
     "cleanup" : [
         "/include",
@@ -26,7 +25,7 @@
         "*.a"
     ],
     "modules" : [
-	{
+        {
             "name" : "libhandy",
             "buildsystem" : "meson",
             "config-opts" : [
@@ -40,9 +39,9 @@
             ],
             "sources" : [
                 {
-                    "type": "archive",
-                    "url": "https://download.gnome.org/sources/libhandy/1.0/libhandy-1.0.0.tar.xz",
-                    "sha256": "a9398582f47b7d729205d6eac0c068fef35aaf249fdd57eea3724f8518d26699"
+                    "type" : "archive",
+                    "url" : "https://download.gnome.org/sources/libhandy/1.0/libhandy-1.0.0.tar.xz",
+                    "sha256" : "a9398582f47b7d729205d6eac0c068fef35aaf249fdd57eea3724f8518d26699"
                 }
             ]
         },
@@ -53,9 +52,9 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://github.com/GustavoPeredo/font-downloader.git",
+                    "url" : "https://gitlab.gnome.org/GustavoPeredo/font-downloader.git",
                     "branch" : "release",
-                    "commit" : "4d2f54b146318d2a6e02ee15b241e5f0a7e5088c"
+                    "commit" : "bf2154f75edf1cc76078c6a08ec83799f3868fd1"
                 }
             ]
         }
