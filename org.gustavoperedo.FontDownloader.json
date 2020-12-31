@@ -54,7 +54,7 @@
                     "type" : "git",
                     "url" : "https://gitlab.gnome.org/GustavoPeredo/font-downloader.git",
                     "branch" : "release",
-                    "commit" : "c6c7cb683556337b89aa4d67b8d5486e651334da"
+                    "commit" : "a25c9fd80204259f9de5960d87a7d07f419b8555"
                 }
             ]
         }
