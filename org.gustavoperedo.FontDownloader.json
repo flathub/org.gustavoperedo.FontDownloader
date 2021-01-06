@@ -11,6 +11,7 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--filesystem=~/.local/share/fonts:create",
+        "--filesystem=/usr/share/fonts",
         "--filesystem=xdg-download"
     ],
     "cleanup" : [
@@ -52,9 +53,9 @@
             "sources" : [
                 {
                     "type" : "git",
-                    "url" : "https://gitlab.gnome.org/GustavoPeredo/font-downloader.git",
+                    "url" : "https://github.com/GustavoPeredo/Font-Downloader.git",
                     "branch" : "release",
-                    "commit" : "a25c9fd80204259f9de5960d87a7d07f419b8555"
+                    "commit" : "827497e767b230411412dbeb87f52a34fd790c6c"
                 }
             ]
         }
