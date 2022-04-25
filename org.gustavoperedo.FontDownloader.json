@@ -1,7 +1,7 @@
 {
     "app-id" : "org.gustavoperedo.FontDownloader",
     "runtime" : "org.gnome.Platform",
-    "runtime-version" : "41",
+    "runtime-version" : "42",
     "sdk" : "org.gnome.Sdk",
     "command" : "fontdownloader",
     "finish-args" : [
@@ -34,7 +34,6 @@
                 {
                     "type" : "git",
                     "url" : "https://github.com/GustavoPeredo/Font-Downloader.git",
-                    "branch" : "release",
                     "commit" : "c61f95fdc77fe6a6337310304ed4686cbf5203d3"
                 }
             ]
