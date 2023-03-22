@@ -1,42 +1,42 @@
 {
-    "app-id" : "org.gustavoperedo.FontDownloader",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "42",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "fontdownloader",
-    "finish-args" : [
-        "--share=network",
-        "--share=ipc",
-        "--device=dri",
-        "--socket=fallback-x11",
-        "--socket=wayland",
-        "--filesystem=~/.local/share/fonts:create",
-        "--filesystem=/usr/share/fonts",
-        "--filesystem=xdg-download"
-    ],
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
-    ],
-    "modules" : [
+  "app-id": "org.gustavoperedo.FontDownloader",
+  "runtime": "org.gnome.Platform",
+  "runtime-version": "44",
+  "sdk": "org.gnome.Sdk",
+  "command": "fontdownloader",
+  "finish-args": [
+    "--share=network",
+    "--share=ipc",
+    "--device=dri",
+    "--socket=fallback-x11",
+    "--socket=wayland",
+    "--filesystem=~/.local/share/fonts:create",
+    "--filesystem=/usr/share/fonts",
+    "--filesystem=xdg-download"
+  ],
+  "cleanup": [
+    "/include",
+    "/lib/pkgconfig",
+    "/man",
+    "/share/doc",
+    "/share/gtk-doc",
+    "/share/man",
+    "/share/pkgconfig",
+    "*.la",
+    "*.a"
+  ],
+  "modules": [
+    {
+      "name": "fontdownloader",
+      "builddir": true,
+      "buildsystem": "meson",
+      "sources": [
         {
-            "name" : "fontdownloader",
-            "builddir" : true,
-            "buildsystem" : "meson",
-            "sources" : [
-                {
-                    "type" : "git",
-                    "url" : "https://github.com/GustavoPeredo/Font-Downloader.git",
-                    "commit" : "a7120ab3af860a3376f765c3aad8ddd783f393e5"
-                }
-            ]
+          "type": "git",
+          "url": "https://github.com/GustavoPeredo/Font-Downloader.git",
+          "commit": "a7120ab3af860a3376f765c3aad8ddd783f393e5"
         }
-    ]
+      ]
+    }
+  ]
 }
