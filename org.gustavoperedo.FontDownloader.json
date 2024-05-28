@@ -11,7 +11,7 @@
         "--socket=fallback-x11",
         "--socket=wayland",
         "--filesystem=~/.local/share/fonts:create",
-        "--filesystem=/usr/share/fonts",
+        "--filesystem=/run/host/fonts",
         "--filesystem=xdg-download"
     ],
     "cleanup" : [
