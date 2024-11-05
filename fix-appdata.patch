@@ -1,0 +1,30 @@
+From 392562d58e641d7b5031afa7bae80f3ca6d11c8c Mon Sep 17 00:00:00 2001
+From: Sabri Ünal <yakushabb@gmail.com>
+Date: Tue, 29 Oct 2024 22:42:51 +0300
+Subject: [PATCH] Fix appdata issues
+
+---
+ data/org.gustavoperedo.FontDownloader.appdata.xml.in | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/data/org.gustavoperedo.FontDownloader.appdata.xml.in b/data/org.gustavoperedo.FontDownloader.appdata.xml.in
+index 0d95426..7aa31ed 100755
+--- a/data/org.gustavoperedo.FontDownloader.appdata.xml.in
++++ b/data/org.gustavoperedo.FontDownloader.appdata.xml.in
+@@ -227,12 +227,12 @@
+   </releases>
+   <url type="homepage">https://github.com/GustavoPeredo/font-downloader</url>
+   <url type="bugtracker">https://github.com/GustavoPeredo/Font-Downloader/issues</url>
++  <url type="vcs-browser">https://github.com/GustavoPeredo/font-downloader</url>
+   <url type="translate">https://poeditor.com/join/project?hash=hfnXv8Iw4o</url>
+   <developer_name>Gustavo Peredo</developer_name>
+   <launchable type="desktop-id">org.gustavoperedo.FontDownloader.desktop</launchable>
+   <content_rating type="oars-1.1"/>
+   <custom>
+     <value key="Purism::form_factor">workstation</value>
+-    <value key="Purism::form_factor">mobile</value>
+   </custom>
+ </component>
+--
+libgit2 1.7.2
+
