@@ -1,10 +1,10 @@
 {
-    "app-id" : "org.gustavoperedo.FontDownloader",
-    "runtime" : "org.gnome.Platform",
-    "runtime-version" : "49",
-    "sdk" : "org.gnome.Sdk",
-    "command" : "fontdownloader",
-    "finish-args" : [
+    "app-id": "org.gustavoperedo.FontDownloader",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "50",
+    "sdk": "org.gnome.Sdk",
+    "command": "fontdownloader",
+    "finish-args": [
         "--share=network",
         "--share=ipc",
         "--device=dri",
@@ -13,31 +13,20 @@
         "--filesystem=~/.local/share/fonts:create",
         "--filesystem=xdg-download"
     ],
-    "cleanup" : [
-        "/include",
-        "/lib/pkgconfig",
-        "/man",
-        "/share/doc",
-        "/share/gtk-doc",
-        "/share/man",
-        "/share/pkgconfig",
-        "*.la",
-        "*.a"
-    ],
-    "modules" : [
+    "modules": [
         {
-            "name" : "fontdownloader",
-            "builddir" : true,
-            "buildsystem" : "meson",
-            "sources" : [
+            "name": "fontdownloader",
+            "buildsystem": "meson",
+            "sources": [
                 {
-                    "type" : "git",
-                    "url" : "https://github.com/GustavoPeredo/Font-Downloader.git",
-                    "commit" : "3f2e198c7515f96c8d5b58a6a46f25f210e90aab"
+                    "type": "git",
+                    "url": "https://github.com/GustavoPeredo/Font-Downloader.git",
+                    "x-comment": "The latest commit from the repository",
+                    "commit": "3f2e198c7515f96c8d5b58a6a46f25f210e90aab"
                 },
                 {
-                    "type" : "patch",
-                    "path" : "fix-appdata.patch"
+                    "type": "patch",
+                    "path": "fix-appdata.patch"
                 }
             ]
         }
